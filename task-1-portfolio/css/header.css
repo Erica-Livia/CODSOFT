@@ -1,10 +1,14 @@
+
+@import 'styles.css';
+
 .header {
     margin: 0;
-    padding: 20px 80px;
+    padding: 10px 80px 5px 80px;
     position: sticky;
     top: 0; 
     z-index: 1000;
-    background-color: var(--third-color);
+    background-color: white;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .header-container {
@@ -61,13 +65,12 @@
 }
 
 .nav-links:hover{
-    font-weight: bolder;
     transition-duration: 0.9s;
 }
 
 .links {
     text-decoration: none;
-    color: var(--dark-text-color);
+    color: var(--4-color);
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -76,7 +79,8 @@
 }
 
 .links:hover {
-    transform: scale(1.2);
+    color: var(--secondary-color);
+    transition: 0.2s;
 }
 
 .links-1 {
@@ -89,14 +93,12 @@
 }
 
 .links-1:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .links-home {
     text-decoration: none;
-    color: var(--dark-text-color);
-    border-right: 1px solid black;
-    border-bottom: 4px solid rgba(250, 210, 1, 0.5);
+    color: var(--secondary-color);
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 7px;
@@ -106,7 +108,7 @@
 }
 
 .links-home:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 

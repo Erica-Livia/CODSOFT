@@ -1,0 +1,13 @@
+footer {
+    
+    border: 1px solid black;
+    height: 100px;
+    background-color: var(--3-color);
+}
+
+h6 {
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
