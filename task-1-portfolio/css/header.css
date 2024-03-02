@@ -5,7 +5,6 @@
     top: 0; 
     z-index: 1000;
     background-color: var(--third-color);
-
 }
 
 .header-container {
@@ -24,7 +23,7 @@
 
 .header-container .header-content .search-bar .logo {
     float: left;
-    padding-left: 180%;
+    padding-left: 10%;
     padding-top: 10%;
     font-size: large;
 }
@@ -69,7 +68,6 @@
 .links {
     text-decoration: none;
     color: var(--dark-text-color);
-    border-right: 1px solid black;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -116,7 +114,7 @@
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .menu {
         display: block;
         cursor: pointer; 
@@ -124,9 +122,14 @@
 }
 
 
-@media (max-width: 500px) {    
+@media (max-width: 550px) {    
     .nav {
         display: none;
+    }
+
+    .search-bar .logo {
+        text-align: center;
+        justify-self: center;
     }
 
 }
