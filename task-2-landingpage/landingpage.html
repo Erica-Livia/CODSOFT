@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var side = document.querySelector('.side');
+            side.addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header class="header" id="index">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="search-bar">
+                    <div class="logo"  style="padding-bottom: 7px; cursor: pointer">Logo</div>
+                    
+                </div>
+            </div>
+            <div class="navigation">
+                <nav class="nav">
+                    <div class="nav-container">
+                        <div class="nav-content">
+                            <div class="nav-links"><a href="index.html" class="links">Overview</a></div>
+                            <div class="nav-links"><a href="#ourteam" class="links">Our Team</a></div>
+                            <div class="nav-links"><a href="#services" class="links">Services</a></div>
+                            <div class="nav-links"><a href="#contact" class="links-1">Contact</a></div>
+                        </div>
+                    </div>
+                    <div class="side" >
+                        <div class="menu">
+                            <a href="index.html" class="links-home">Overview</a>
+                            <a href="#services" class="links">Services</a>
+                            <a href="#contact" class="links-1">Contact</a>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+
+</body>
