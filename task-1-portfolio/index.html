@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Erica's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,12 +11,13 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">Erica-Livia Ingabire</a>
+                <a href="#">Erica-Livia</a>
             </div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#experiences">Experiences</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="hamburger">
@@ -30,8 +31,14 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1>Erica-Livia Ingabire</h1>
-                <p>Front-End Developer &amp; Designer</p>
+                <h1>
+                    <span class="intro">Hi, I'm</span>
+                    <span class="name">Erica-Livia Ingabire</span>
+                </h1>
+                <p class="tagline">
+                    <span class="emphasized">Creative</span> Front-End Developer &amp; <span class="emphasized">Passionate</span> Designer
+                </p>
+                <a href="#contact" class="btn">Let's Collaborate</a>
             </div>
         </section>
 
@@ -70,6 +77,12 @@
                     <i class="fab fa-node-js" style="color: #3c903e"></i>
                     <p>Node.js</p>
                 </div>
+                <div class="skill-icon">
+                    <div class="icon-container">
+                        <img src="./assets/images/figma-icon.png" alt="Figma" class="icon-img">
+                    </div>
+                    <p>Figma</p>
+                </div>
             </div>
         </section>
 
@@ -77,17 +90,16 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project">
-                    <img src="project1.jpg" alt="Project 1">
+                    <video id="myVideo" src="./assets/videos/project1.mp4" alt="Project 3" autoplay muted>
+                    </video>
                     <div class="project-info">
-                        <h3>Project 1</h3>
-                        <p>Description of Project 1</p>
+                        <h3>Mental Health Figma Design</h3>
                     </div>
                 </div>
                 <div class="project">
                     <img src="./assets/images/project2.png" alt="Project 2">
                     <div class="project-info">
-                        <h3>Project 2</h3>
-                        <p>Description of Project 2</p>
+                        <h3>Wanderlust - A Tourism Website</h3>
                     </div>
                 </div>
                 <div class="project">
@@ -95,12 +107,26 @@
                     </video>
                     
                     <div class="project-info">
-                        <h3>Project 3</h3>
-                        <p>Description of Project 3</p>
+                        <h3>4C Services Website</h3>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="experiences">
+          <h2>Experiences</h2>
+          <div class="experience-grid">
+        <div class="experience">
+            <h3>Software Engineering Intern</h3>
+            <p class="company">ACLIS Africa</p>
+            <p class="duration">October 2023 - December 2023</p>
+        </div>
+        <div class="experience">
+            <h3>Web Developer Intern</h3>
+            <p class="company">CODSOFT</p>
+            <p class="duration">February 2024 - April 2024</p>
+        </div>
+    </div>
+</section>
 
         <section id="contact">
             <h2>Get In Touch</h2>
@@ -122,6 +148,7 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        
     </main>
 
     <footer>

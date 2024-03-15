@@ -59,7 +59,7 @@ nav {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(47, 162, 197);
+    background-color: rgb(32, 105, 128);
 }
 /* Hamburger menu active state */
 .hamburger.active .bar:nth-child(2) {
@@ -105,15 +105,21 @@ nav {
 
 /* Hero section */
 #hero {
-    background-image: url('../task-1-portfolio/assets/images/hero1.jpg');
+    background-image: url('./assets/images/hero.avif');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
 }
 
 .hero-content h1 {
@@ -121,10 +127,37 @@ nav {
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 24px;
+.intro {
+    font-weight: normal;
 }
 
+.name {
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.emphasized {
+    font-weight: bold;
+    color: rgb(47, 162, 197);
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(32, 105, 128);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(47, 162, 197);
+}
 /* Sections */
 section {
     padding: 80px 20px;
@@ -183,6 +216,11 @@ section {
 
 .skill-icon p {
     font-weight: bold;
+}
+
+.icon-container .icon-img {
+    height: 48px;
+    margin-bottom: 4px;
 }
 
 /* Projects section */
@@ -252,6 +290,50 @@ section {
     font-size: 24px;
     color: rgb(47, 162, 197);
     margin-right: 10px;
+}
+
+/* Experiences section */
+#experiences {
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+
+.experience h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.experience .company {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience .duration {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience .description {
+    line-height: 1.5;
 }
 
 form {
